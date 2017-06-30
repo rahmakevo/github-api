@@ -9,7 +9,7 @@ $(document).ready(function() {
     var account = $('#ghusername').val();
     console.log(account);
     $.get('https://api.github.com/users/daneden?access_token' + apiKey).then(function(response) {
-      console.log(response);
+      console.log(response.login);
     }).fail(function(error) {
       console.log(error.responseJSON.message);
     })
