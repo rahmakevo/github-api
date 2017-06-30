@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- vendor build css link -->
+    <link rel="stylesheet" href="build/css/vendor.css">
+    <!-- endor of vendor build css link -->
+    <!-- css master link -->
+    <link rel="stylesheet" href="css/master.css">
+    <!-- end of css master link -->
+    <title>Git API</title>
+    <!-- build vendor js script -->
+    <script type="text/javascript" src="build/js/vendor.min.js"></script>
+    <!-- end of vendor js -->
+    <!-- build app js -->
+    <script type="text/javascript" src="build/js/app.js"></script>
+    <!-- end of build app js -->
+  </head>
+  <body>
+    <!-- form to input username for git -->
+    <form id="interface">
+      <h1>Simple Github API Webapp</h1>
+      <p>Enter a single Github username below and click the button to display profile info via JSON.</p>
+      <label for="ghusername"></label>
+      <input type="text" name="ghusername" id="ghusername" placeholder="Github username.." required>
+      <button type="submit" name="button" class="btn btn-success"><a href="#" id="ghsubmitbtn"></a>Pull User Data</button>
+    </form>
+          <!-- end of form -->
+    <span>
+      <!-- display user account info-->
+      <div class="clearfix" id="ghapidata">
+
+      </div>
+      <!-- end of user account info-->
+    </span>
+  </body>
+</html>

@@ -1,0 +1,5 @@
+node_modules/
+.envfile
+bower_components/
+build/
+tmp/
