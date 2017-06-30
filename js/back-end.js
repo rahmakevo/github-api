@@ -32,13 +32,14 @@ userAccount.prototype.getUserInfo = function(account){
         response.name = "Input correct user info";
       }
       $('#followed').text(response.following);
-
-      // var repos = '';
-      // $.get('https://api.github.com/users/repos' + account +)
       if (response.public_repos == null) {
         response.name = "Input correct user info";
       }
       $('#repos').text(response.public_repos);
+      if (response.repos_url == null) {
+        response.name = "Input correct user info";
+      }
+      $('#repo_url').text(response.repos_url)
 
   }).fail(function(error) {
     console.log(error.responseJSON.message);
