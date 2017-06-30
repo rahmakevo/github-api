@@ -27,13 +27,61 @@
       <input type="text" name="ghusername" id="ghusername" placeholder="Github username.." required>
       <button type="submit" name="button" class="btn btn-success"><a href="#" id="ghsubmitbtn"></a>Pull User Data</button>
     </form>
-          <!-- end of form -->
-    <span>
-      <!-- display user account info-->
-      <div class="clearfix" id="ghapidata">
+    <!-- end of form -->
 
+    <div class="container">
+      <div class="row">
+        <!-- display avatar -->
+        <div id="avatar">
+
+        </div>
+        <!-- avatar url -->
+        <p class="clearfix col-md-4" id="avatarurl"></p>
+        <!-- end of avatar url -->
+        <!-- end of avatar -->
       </div>
-      <!-- end of user account info-->
-    </span>
+   </div>
+   </div class="container">
+      <div class="row">
+        <!-- display user account info -->
+        <div class="col-md-12">
+          <!-- display fullname -->
+          <label for="full_name" class="">User Name: </label><p class="clearfix" id="full_name"></p>
+          <!-- end of display fullname -->
+          <!-- display username -->
+          <label for="ghapidata">Login Name: </label><p class="clearfix" id="ghapidata"></p>
+          <!-- end of username -->
+          <!-- display profile url -->
+          <label for="profile_url">Profile Url: </label><p class="clearfix" id="profile_url"></p>
+          <!-- end of profile url -->
+          <!-- display email -->
+          <label for="my_email">Email: </label><p class="clearfix" id="my_email"></p>
+          <!-- end of email -->
+          <!-- display followers -->
+          <label for="follow">Followers: </label><p class="clearfix" id="follow"></p>
+          <!-- display followers -->
+          <!-- display following -->
+          <label for="followed">Following: </label><p class="clearfix" id="followed"></p>
+          <!-- display following -->
+          <!-- display repos -->
+          <div class="">
+            <label for="repos">No.of Repositories: </label>
+            <p id="repos"></p>
+            <label for="repo_url">Repositories Url: </label>
+            <p id="repo_url"></p>
+          </div>
+          <!-- end of display repos -->
+        </div>
+        <!-- end of user account info -->
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+
+
+        </div>
+      </div>
+    </div>
   </body>
 </html>
