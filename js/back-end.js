@@ -56,5 +56,5 @@ userAccount.prototype.getUserInfo = function(account){
   }).fail(function(error) {
     console.log(error.responseJSON.message);
   });
-}
+};
 exports.userAccountModule = userAccount;
